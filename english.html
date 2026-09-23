@@ -1,0 +1,1867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SSC CGL 2026 — English Language Practice Material</title>
+<style>
+  :root {
+    --bg: #f7f5f0; --card-bg: #ffffff; --text: #1f2430; --muted: #6b7280; --border: #e5e2da;
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:'Georgia','Segoe UI',system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.55; }
+  #top { scroll-margin-top:0; }
+  .sitenav { background:#0f172a; padding:10px 16px; text-align:center; }
+  .sitenav a { color:#cbd5e1; text-decoration:none; font-size:0.85rem; margin:0 10px; padding:4px 10px; border-radius:6px; }
+  .sitenav a.active { background:#f59e0b; color:#1e293b; font-weight:700; }
+  .sitenav a:hover { color:#fff; }
+  .cover { background:linear-gradient(135deg,#1e293b,#0f172a); color:#f8fafc; padding:56px 24px 40px; text-align:center; }
+  .cover .badge { display:inline-block; background:#f59e0b; color:#1e293b; font-weight:700; padding:6px 16px; border-radius:20px; font-size:13px; letter-spacing:0.5px; margin-bottom:18px; }
+  .cover h1 { font-size:2.1rem; margin:0 0 8px; font-family:'Georgia',serif; }
+  .cover p.sub { color:#cbd5e1; font-size:1.05rem; margin:0 0 18px; }
+  .cover .meta { font-size:0.95rem; color:#94a3b8; }
+  .stats { display:flex; justify-content:center; gap:28px; margin-top:26px; flex-wrap:wrap; }
+  .stat { text-align:center; }
+  .stat .num { font-size:1.6rem; font-weight:700; color:#f59e0b; }
+  .stat .label { font-size:0.8rem; color:#94a3b8; text-transform:uppercase; letter-spacing:0.5px; }
+  .howto { max-width:820px; margin:-28px auto 0; background:var(--card-bg); border:1px solid var(--border); border-radius:12px; padding:24px 28px; box-shadow:0 10px 30px rgba(0,0,0,0.08); position:relative; z-index:2; }
+  .howto h3 { margin-top:0; font-size:1.05rem; }
+  .howto ol { margin:0; padding-left:20px; color:var(--muted); font-size:0.93rem; }
+  .howto li { margin-bottom:6px; }
+  .whatsnew { max-width:820px; margin:20px auto 0; background:#fef2f2; border:1px solid #fecaca; border-radius:10px; padding:16px 20px; font-size:0.88rem; color:#7f1d1d; }
+  .whatsnew b { color:#991b1b; }
+  .toc { max-width:820px; margin:28px auto; padding:0 16px; }
+  .toc h3 { text-align:center; color:var(--muted); font-size:0.85rem; text-transform:uppercase; letter-spacing:1px; margin-bottom:14px; }
+  .toc-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:10px; }
+  .toc-link { display:flex; align-items:center; gap:10px; background:var(--card-bg); border:1px solid var(--border); border-left:4px solid var(--accent); border-radius:8px; padding:12px 14px; text-decoration:none; color:var(--text); font-size:0.92rem; transition:transform 0.15s; }
+  .toc-link:hover { transform:translateX(2px); }
+  .toc-num { background:var(--accent); color:#fff; width:22px; height:22px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:0.72rem; font-weight:700; flex-shrink:0; }
+  .toc-count { margin-left:auto; color:var(--muted); font-size:0.78rem; }
+  .content { max-width:820px; margin:0 auto; padding:10px 16px 60px; }
+  .topic-section { margin-top:48px; padding-top:8px; }
+  .topic-header { display:flex; align-items:baseline; gap:12px; border-bottom:3px solid var(--accent); padding-bottom:10px; margin-bottom:16px; flex-wrap:wrap; }
+  .topic-index { background:var(--accent); color:#fff; font-size:0.72rem; font-weight:700; padding:4px 10px; border-radius:5px; letter-spacing:0.5px; }
+  .topic-header h2 { margin:0; font-size:1.5rem; flex:1; }
+  .qcount { color:var(--muted); font-size:0.85rem; }
+  .shortcuts-box { background:#fffaf0; border:1px solid #f3e3b8; border-left:4px solid var(--accent); border-radius:8px; padding:14px 18px; margin-bottom:20px; }
+  .shortcuts-title { font-weight:700; font-size:0.9rem; margin-bottom:8px; color:#92400e; }
+  .shortcuts-box ul { margin:0; padding-left:20px; font-size:0.9rem; color:#57534e; }
+  .shortcuts-box li { margin-bottom:5px; }
+  .qcard { background:var(--card-bg); border:1px solid var(--border); border-radius:8px; margin-bottom:8px; overflow:hidden; }
+  .qcard summary { padding:11px 14px; cursor:pointer; display:flex; gap:10px; align-items:baseline; font-size:0.93rem; list-style:none; }
+  .qcard summary::-webkit-details-marker { display:none; }
+  .qcard summary::before { content:"▸"; color:var(--accent); font-size:0.8rem; transition:transform 0.15s; flex-shrink:0; }
+  .qcard[open] summary::before { transform:rotate(90deg); }
+  .qnum { font-weight:700; color:var(--accent); flex-shrink:0; font-size:0.85rem; }
+  .qtext { color:var(--text); }
+  .answer { padding:4px 16px 14px 40px; border-top:1px dashed var(--border); }
+  .steps { margin:8px 0; padding-left:18px; color:var(--muted); font-size:0.88rem; }
+  .steps li { margin-bottom:4px; }
+  .final { margin-top:8px; font-weight:700; color:#065f46; background:#ecfdf5; display:inline-block; padding:5px 12px; border-radius:6px; font-size:0.9rem; }
+  .mini { border-collapse:collapse; margin:8px 0; font-size:0.82rem; }
+  .mini th, .mini td { border:1px solid var(--border); padding:4px 10px; text-align:left; }
+  .mini th { background:#f3f1ea; }
+  .back-top { display:inline-block; margin-top:16px; font-size:0.82rem; color:var(--muted); text-decoration:none; }
+  .back-top:hover { color:var(--text); }
+  .expand-controls { text-align:center; margin:6px 0 30px; }
+  .expand-controls button { background:var(--card-bg); border:1px solid var(--border); padding:8px 16px; border-radius:20px; cursor:pointer; font-size:0.85rem; margin:0 4px; color:var(--text); }
+  .expand-controls button:hover { background:#f3f1ea; }
+  footer { text-align:center; color:var(--muted); font-size:0.85rem; padding:30px 16px 50px; }
+  @media print { .toc,.expand-controls,.back-top,.sitenav { display:none; } .qcard { break-inside:avoid; } details { display:block !important; } .qcard summary::before { display:none; } }
+</style>
+</head>
+<body>
+<div class="sitenav">
+  <a href="index.html">Home</a>
+  <a href="quant.html">Quant</a>
+  <a href="reasoning.html">Reasoning</a>
+  <a href="english.html" class="active">English</a>
+  <a href="ga.html">General Awareness</a>
+</div>
+<div id="top"></div>
+<div class="cover">
+  <span class="badge">SSC CGL 2026 · TIER 1 · COMPLETE EDITION</span>
+  <h1>English Language — Practice Material</h1>
+  <p class="sub">240+ questions · 5 topics · vocabulary and grammar curated for accuracy</p>
+  <p class="meta">Part of the SSC CGL 2026 Tier 1 Complete Edition</p>
+  <div class="stats"><div class='stat'><div class='num'>240</div><div class='label'>Questions</div></div><div class='stat'><div class='num'>5</div><div class='label'>Topics</div></div><div class='stat'><div class='num'>Curated</div><div class='label'>Word Banks</div></div></div>
+</div>
+
+<div class="howto">
+  <h3>📘 How to Use This Material</h3>
+  <ol><li>Vocabulary (Synonyms, Antonyms, One Word Substitution, Idioms) is a curated, verified list — quality over inflated quantity.</li><li>Spotting Errors questions are rule-based and regenerate infinitely — practice the pattern, not just the sentence.</li><li>Click a question to reveal the answer — try recalling the meaning yourself first.</li><li>This document prints cleanly for offline revision.</li></ol>
+</div>
+
+<div class="whatsnew"><b>Coverage note:</b> Vocabulary topics here are deliberately smaller (30-40 curated words each) rather than padded to 100, because word meanings must be accurate, not templated. Reading Comprehension and Cloze Test (which need full passages) will be added as a follow-up module.</div>
+
+<div class="toc">
+  <h3>Jump to a topic</h3>
+  <div class="toc-grid">
+<a class='toc-link' href='#topic1' style='--accent:#2563eb'><span class='toc-num'>1</span><span>Synonyms</span><span class='toc-count'>40 Qs</span></a>
+<a class='toc-link' href='#topic2' style='--accent:#dc2626'><span class='toc-num'>2</span><span>Antonyms</span><span class='toc-count'>40 Qs</span></a>
+<a class='toc-link' href='#topic3' style='--accent:#059669'><span class='toc-num'>3</span><span>One Word Substitution</span><span class='toc-count'>30 Qs</span></a>
+<a class='toc-link' href='#topic4' style='--accent:#d97706'><span class='toc-num'>4</span><span>Idioms & Phrases</span><span class='toc-count'>30 Qs</span></a>
+<a class='toc-link' href='#topic5' style='--accent:#7c3aed'><span class='toc-num'>5</span><span>Spotting Errors (Subject-Verb Agreement)</span><span class='toc-count'>100 Qs</span></a>
+  </div>
+</div>
+
+<div class="content">
+  <div class="expand-controls">
+    <button onclick="document.querySelectorAll('details').forEach(d=>d.open=true)">Expand all answers</button>
+    <button onclick="document.querySelectorAll('details').forEach(d=>d.open=false)">Collapse all</button>
+  </div>
+    <section id="topic1" class="topic-section" style="--accent:#2563eb">
+      <div class="topic-header">
+        <span class="topic-index">TOPIC 1</span>
+        <h2>Synonyms</h2>
+        <span class="qcount">40 Questions</span>
+      </div>
+      <div class="shortcuts-box">
+        <div class="shortcuts-title">⚡ Quick Shortcuts</div>
+        <ul><li>Learn words in groups/families rather than in isolation — it builds faster recall.</li><li>Context clues in a sentence often reveal a word's meaning even if you haven't memorized it.</li><li>Revise a rotating list of 20 new words daily instead of cramming hundreds at once.</li></ul>
+      </div>
+      <div class="qlist">
+        <details class="qcard">
+          <summary><span class="qnum">Q1</span><span class="qtext">Choose the word most similar in meaning to: ABUNDANT</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'ABUNDANT' means 'plentiful' in common usage.</li></ol>
+            <div class="final">Answer: Plentiful</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q2</span><span class="qtext">Choose the word most similar in meaning to: BENEVOLENT</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'BENEVOLENT' means 'kind' in common usage.</li></ol>
+            <div class="final">Answer: Kind</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q3</span><span class="qtext">Choose the word most similar in meaning to: CANDID</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'CANDID' means 'frank' in common usage.</li></ol>
+            <div class="final">Answer: Frank</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q4</span><span class="qtext">Choose the word most similar in meaning to: DILIGENT</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'DILIGENT' means 'hardworking' in common usage.</li></ol>
+            <div class="final">Answer: Hardworking</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q5</span><span class="qtext">Choose the word most similar in meaning to: ELOQUENT</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'ELOQUENT' means 'fluent' in common usage.</li></ol>
+            <div class="final">Answer: Fluent</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q6</span><span class="qtext">Choose the word most similar in meaning to: FRUGAL</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'FRUGAL' means 'thrifty' in common usage.</li></ol>
+            <div class="final">Answer: Thrifty</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q7</span><span class="qtext">Choose the word most similar in meaning to: GENUINE</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'GENUINE' means 'authentic' in common usage.</li></ol>
+            <div class="final">Answer: Authentic</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q8</span><span class="qtext">Choose the word most similar in meaning to: HOSTILE</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'HOSTILE' means 'unfriendly' in common usage.</li></ol>
+            <div class="final">Answer: Unfriendly</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q9</span><span class="qtext">Choose the word most similar in meaning to: IMMENSE</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'IMMENSE' means 'huge' in common usage.</li></ol>
+            <div class="final">Answer: Huge</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q10</span><span class="qtext">Choose the word most similar in meaning to: JOVIAL</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'JOVIAL' means 'cheerful' in common usage.</li></ol>
+            <div class="final">Answer: Cheerful</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q11</span><span class="qtext">Choose the word most similar in meaning to: KEEN</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'KEEN' means 'eager' in common usage.</li></ol>
+            <div class="final">Answer: Eager</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q12</span><span class="qtext">Choose the word most similar in meaning to: LUCID</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'LUCID' means 'clear' in common usage.</li></ol>
+            <div class="final">Answer: Clear</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q13</span><span class="qtext">Choose the word most similar in meaning to: MERIT</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'MERIT' means 'worth' in common usage.</li></ol>
+            <div class="final">Answer: Worth</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q14</span><span class="qtext">Choose the word most similar in meaning to: NAIVE</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'NAIVE' means 'innocent' in common usage.</li></ol>
+            <div class="final">Answer: Innocent</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q15</span><span class="qtext">Choose the word most similar in meaning to: OBSOLETE</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'OBSOLETE' means 'outdated' in common usage.</li></ol>
+            <div class="final">Answer: Outdated</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q16</span><span class="qtext">Choose the word most similar in meaning to: PRUDENT</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'PRUDENT' means 'wise' in common usage.</li></ol>
+            <div class="final">Answer: Wise</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q17</span><span class="qtext">Choose the word most similar in meaning to: QUAINT</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'QUAINT' means 'charming' in common usage.</li></ol>
+            <div class="final">Answer: Charming</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q18</span><span class="qtext">Choose the word most similar in meaning to: RETICENT</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'RETICENT' means 'reserved' in common usage.</li></ol>
+            <div class="final">Answer: Reserved</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q19</span><span class="qtext">Choose the word most similar in meaning to: SINCERE</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'SINCERE' means 'honest' in common usage.</li></ol>
+            <div class="final">Answer: Honest</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q20</span><span class="qtext">Choose the word most similar in meaning to: TEDIOUS</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'TEDIOUS' means 'boring' in common usage.</li></ol>
+            <div class="final">Answer: Boring</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q21</span><span class="qtext">Choose the word most similar in meaning to: UNANIMOUS</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'UNANIMOUS' means 'agreed' in common usage.</li></ol>
+            <div class="final">Answer: Agreed</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q22</span><span class="qtext">Choose the word most similar in meaning to: VIGILANT</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'VIGILANT' means 'watchful' in common usage.</li></ol>
+            <div class="final">Answer: Watchful</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q23</span><span class="qtext">Choose the word most similar in meaning to: WARY</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'WARY' means 'cautious' in common usage.</li></ol>
+            <div class="final">Answer: Cautious</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q24</span><span class="qtext">Choose the word most similar in meaning to: ZEALOUS</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'ZEALOUS' means 'enthusiastic' in common usage.</li></ol>
+            <div class="final">Answer: Enthusiastic</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q25</span><span class="qtext">Choose the word most similar in meaning to: AMIABLE</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'AMIABLE' means 'friendly' in common usage.</li></ol>
+            <div class="final">Answer: Friendly</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q26</span><span class="qtext">Choose the word most similar in meaning to: BRISK</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'BRISK' means 'quick' in common usage.</li></ol>
+            <div class="final">Answer: Quick</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q27</span><span class="qtext">Choose the word most similar in meaning to: CORDIAL</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'CORDIAL' means 'warm' in common usage.</li></ol>
+            <div class="final">Answer: Warm</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q28</span><span class="qtext">Choose the word most similar in meaning to: DILEMMA</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'DILEMMA' means 'predicament' in common usage.</li></ol>
+            <div class="final">Answer: Predicament</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q29</span><span class="qtext">Choose the word most similar in meaning to: ENORMOUS</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'ENORMOUS' means 'gigantic' in common usage.</li></ol>
+            <div class="final">Answer: Gigantic</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q30</span><span class="qtext">Choose the word most similar in meaning to: FEEBLE</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'FEEBLE' means 'weak' in common usage.</li></ol>
+            <div class="final">Answer: Weak</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q31</span><span class="qtext">Choose the word most similar in meaning to: GRIM</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'GRIM' means 'stern' in common usage.</li></ol>
+            <div class="final">Answer: Stern</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q32</span><span class="qtext">Choose the word most similar in meaning to: HUMBLE</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'HUMBLE' means 'modest' in common usage.</li></ol>
+            <div class="final">Answer: Modest</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q33</span><span class="qtext">Choose the word most similar in meaning to: IMPARTIAL</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'IMPARTIAL' means 'unbiased' in common usage.</li></ol>
+            <div class="final">Answer: Unbiased</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q34</span><span class="qtext">Choose the word most similar in meaning to: JUBILANT</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'JUBILANT' means 'elated' in common usage.</li></ol>
+            <div class="final">Answer: Elated</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q35</span><span class="qtext">Choose the word most similar in meaning to: KNACK</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'KNACK' means 'skill' in common usage.</li></ol>
+            <div class="final">Answer: Skill</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q36</span><span class="qtext">Choose the word most similar in meaning to: LETHARGIC</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'LETHARGIC' means 'sluggish' in common usage.</li></ol>
+            <div class="final">Answer: Sluggish</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q37</span><span class="qtext">Choose the word most similar in meaning to: MEAGER</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'MEAGER' means 'scanty' in common usage.</li></ol>
+            <div class="final">Answer: Scanty</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q38</span><span class="qtext">Choose the word most similar in meaning to: NOTORIOUS</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'NOTORIOUS' means 'infamous' in common usage.</li></ol>
+            <div class="final">Answer: Infamous</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q39</span><span class="qtext">Choose the word most similar in meaning to: OMINOUS</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'OMINOUS' means 'threatening' in common usage.</li></ol>
+            <div class="final">Answer: Threatening</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q40</span><span class="qtext">Choose the word most similar in meaning to: PERTINENT</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'PERTINENT' means 'relevant' in common usage.</li></ol>
+            <div class="final">Answer: Relevant</div>
+          </div>
+        </details>
+      </div>
+      <a href="#top" class="back-top">↑ Back to top</a>
+    </section>
+    <section id="topic2" class="topic-section" style="--accent:#dc2626">
+      <div class="topic-header">
+        <span class="topic-index">TOPIC 2</span>
+        <h2>Antonyms</h2>
+        <span class="qcount">40 Questions</span>
+      </div>
+      <div class="shortcuts-box">
+        <div class="shortcuts-title">⚡ Quick Shortcuts</div>
+        <ul><li>Many antonyms are formed using prefixes: un-, in-, dis-, im-, non-.</li><li>Learn synonym-antonym pairs together — they reinforce each other in memory.</li><li>Watch for words with multiple meanings; the antonym can change with context.</li></ul>
+      </div>
+      <div class="qlist">
+        <details class="qcard">
+          <summary><span class="qnum">Q1</span><span class="qtext">Choose the word most opposite in meaning to: ABUNDANT</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'ABUNDANT' is the opposite of 'scarce'.</li></ol>
+            <div class="final">Answer: Scarce</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q2</span><span class="qtext">Choose the word most opposite in meaning to: ANCIENT</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'ANCIENT' is the opposite of 'modern'.</li></ol>
+            <div class="final">Answer: Modern</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q3</span><span class="qtext">Choose the word most opposite in meaning to: BENEVOLENT</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'BENEVOLENT' is the opposite of 'cruel'.</li></ol>
+            <div class="final">Answer: Cruel</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q4</span><span class="qtext">Choose the word most opposite in meaning to: BRAVE</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'BRAVE' is the opposite of 'cowardly'.</li></ol>
+            <div class="final">Answer: Cowardly</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q5</span><span class="qtext">Choose the word most opposite in meaning to: CANDID</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'CANDID' is the opposite of 'deceptive'.</li></ol>
+            <div class="final">Answer: Deceptive</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q6</span><span class="qtext">Choose the word most opposite in meaning to: DILIGENT</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'DILIGENT' is the opposite of 'lazy'.</li></ol>
+            <div class="final">Answer: Lazy</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q7</span><span class="qtext">Choose the word most opposite in meaning to: ELOQUENT</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'ELOQUENT' is the opposite of 'inarticulate'.</li></ol>
+            <div class="final">Answer: Inarticulate</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q8</span><span class="qtext">Choose the word most opposite in meaning to: FRUGAL</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'FRUGAL' is the opposite of 'extravagant'.</li></ol>
+            <div class="final">Answer: Extravagant</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q9</span><span class="qtext">Choose the word most opposite in meaning to: GENUINE</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'GENUINE' is the opposite of 'fake'.</li></ol>
+            <div class="final">Answer: Fake</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q10</span><span class="qtext">Choose the word most opposite in meaning to: HOSTILE</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'HOSTILE' is the opposite of 'friendly'.</li></ol>
+            <div class="final">Answer: Friendly</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q11</span><span class="qtext">Choose the word most opposite in meaning to: IMMENSE</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'IMMENSE' is the opposite of 'tiny'.</li></ol>
+            <div class="final">Answer: Tiny</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q12</span><span class="qtext">Choose the word most opposite in meaning to: JOVIAL</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'JOVIAL' is the opposite of 'gloomy'.</li></ol>
+            <div class="final">Answer: Gloomy</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q13</span><span class="qtext">Choose the word most opposite in meaning to: KEEN</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'KEEN' is the opposite of 'indifferent'.</li></ol>
+            <div class="final">Answer: Indifferent</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q14</span><span class="qtext">Choose the word most opposite in meaning to: LUCID</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'LUCID' is the opposite of 'confusing'.</li></ol>
+            <div class="final">Answer: Confusing</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q15</span><span class="qtext">Choose the word most opposite in meaning to: NAIVE</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'NAIVE' is the opposite of 'sophisticated'.</li></ol>
+            <div class="final">Answer: Sophisticated</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q16</span><span class="qtext">Choose the word most opposite in meaning to: OBSOLETE</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'OBSOLETE' is the opposite of 'current'.</li></ol>
+            <div class="final">Answer: Current</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q17</span><span class="qtext">Choose the word most opposite in meaning to: PRUDENT</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'PRUDENT' is the opposite of 'reckless'.</li></ol>
+            <div class="final">Answer: Reckless</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q18</span><span class="qtext">Choose the word most opposite in meaning to: RETICENT</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'RETICENT' is the opposite of 'talkative'.</li></ol>
+            <div class="final">Answer: Talkative</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q19</span><span class="qtext">Choose the word most opposite in meaning to: SINCERE</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'SINCERE' is the opposite of 'insincere'.</li></ol>
+            <div class="final">Answer: Insincere</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q20</span><span class="qtext">Choose the word most opposite in meaning to: TEDIOUS</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'TEDIOUS' is the opposite of 'exciting'.</li></ol>
+            <div class="final">Answer: Exciting</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q21</span><span class="qtext">Choose the word most opposite in meaning to: VIGILANT</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'VIGILANT' is the opposite of 'careless'.</li></ol>
+            <div class="final">Answer: Careless</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q22</span><span class="qtext">Choose the word most opposite in meaning to: WARY</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'WARY' is the opposite of 'trusting'.</li></ol>
+            <div class="final">Answer: Trusting</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q23</span><span class="qtext">Choose the word most opposite in meaning to: ZEALOUS</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'ZEALOUS' is the opposite of 'apathetic'.</li></ol>
+            <div class="final">Answer: Apathetic</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q24</span><span class="qtext">Choose the word most opposite in meaning to: AMIABLE</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'AMIABLE' is the opposite of 'hostile'.</li></ol>
+            <div class="final">Answer: Hostile</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q25</span><span class="qtext">Choose the word most opposite in meaning to: BRISK</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'BRISK' is the opposite of 'sluggish'.</li></ol>
+            <div class="final">Answer: Sluggish</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q26</span><span class="qtext">Choose the word most opposite in meaning to: CORDIAL</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'CORDIAL' is the opposite of 'cold'.</li></ol>
+            <div class="final">Answer: Cold</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q27</span><span class="qtext">Choose the word most opposite in meaning to: ENORMOUS</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'ENORMOUS' is the opposite of 'minuscule'.</li></ol>
+            <div class="final">Answer: Minuscule</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q28</span><span class="qtext">Choose the word most opposite in meaning to: FEEBLE</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'FEEBLE' is the opposite of 'strong'.</li></ol>
+            <div class="final">Answer: Strong</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q29</span><span class="qtext">Choose the word most opposite in meaning to: GRIM</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'GRIM' is the opposite of 'cheerful'.</li></ol>
+            <div class="final">Answer: Cheerful</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q30</span><span class="qtext">Choose the word most opposite in meaning to: HUMBLE</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'HUMBLE' is the opposite of 'arrogant'.</li></ol>
+            <div class="final">Answer: Arrogant</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q31</span><span class="qtext">Choose the word most opposite in meaning to: IMPARTIAL</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'IMPARTIAL' is the opposite of 'biased'.</li></ol>
+            <div class="final">Answer: Biased</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q32</span><span class="qtext">Choose the word most opposite in meaning to: JUBILANT</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'JUBILANT' is the opposite of 'sorrowful'.</li></ol>
+            <div class="final">Answer: Sorrowful</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q33</span><span class="qtext">Choose the word most opposite in meaning to: LETHARGIC</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'LETHARGIC' is the opposite of 'energetic'.</li></ol>
+            <div class="final">Answer: Energetic</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q34</span><span class="qtext">Choose the word most opposite in meaning to: MEAGER</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'MEAGER' is the opposite of 'abundant'.</li></ol>
+            <div class="final">Answer: Abundant</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q35</span><span class="qtext">Choose the word most opposite in meaning to: OMINOUS</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'OMINOUS' is the opposite of 'promising'.</li></ol>
+            <div class="final">Answer: Promising</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q36</span><span class="qtext">Choose the word most opposite in meaning to: PERTINENT</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'PERTINENT' is the opposite of 'irrelevant'.</li></ol>
+            <div class="final">Answer: Irrelevant</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q37</span><span class="qtext">Choose the word most opposite in meaning to: OPTIMIST</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'OPTIMIST' is the opposite of 'pessimist'.</li></ol>
+            <div class="final">Answer: Pessimist</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q38</span><span class="qtext">Choose the word most opposite in meaning to: ANCIENT</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'ANCIENT' is the opposite of 'new'.</li></ol>
+            <div class="final">Answer: New</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q39</span><span class="qtext">Choose the word most opposite in meaning to: ASCEND</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'ASCEND' is the opposite of 'descend'.</li></ol>
+            <div class="final">Answer: Descend</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q40</span><span class="qtext">Choose the word most opposite in meaning to: VICTORY</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>'VICTORY' is the opposite of 'defeat'.</li></ol>
+            <div class="final">Answer: Defeat</div>
+          </div>
+        </details>
+      </div>
+      <a href="#top" class="back-top">↑ Back to top</a>
+    </section>
+    <section id="topic3" class="topic-section" style="--accent:#059669">
+      <div class="topic-header">
+        <span class="topic-index">TOPIC 3</span>
+        <h2>One Word Substitution</h2>
+        <span class="qcount">30 Questions</span>
+      </div>
+      <div class="shortcuts-box">
+        <div class="shortcuts-title">⚡ Quick Shortcuts</div>
+        <ul><li>Group substitutions by theme: professions, fears (phobias), types of killing, places.</li><li>Most SSC one-word substitution questions repeat from a limited, well-known list — master that list first.</li><li>Say the phrase and the word aloud together a few times to build recall speed.</li></ul>
+      </div>
+      <div class="qlist">
+        <details class="qcard">
+          <summary><span class="qnum">Q1</span><span class="qtext">Give one word for: 'One who studies birds'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Ornithologist</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q2</span><span class="qtext">Give one word for: 'One who studies the past through remains'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Archaeologist</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q3</span><span class="qtext">Give one word for: 'A person who can speak two languages'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Bilingual</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q4</span><span class="qtext">Give one word for: 'A place where money is coined'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Mint</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q5</span><span class="qtext">Give one word for: 'One who is indifferent to pleasure or pain'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Stoic</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q6</span><span class="qtext">Give one word for: 'A person who loves books'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Bibliophile</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q7</span><span class="qtext">Give one word for: 'A handwriting that cannot be read'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Illegible</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q8</span><span class="qtext">Give one word for: 'One who eats too much'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Glutton</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q9</span><span class="qtext">Give one word for: 'A word that reads the same backward and forward'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Palindrome</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q10</span><span class="qtext">Give one word for: 'Government by the people'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Democracy</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q11</span><span class="qtext">Give one word for: 'One who cannot be corrected'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Incorrigible</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q12</span><span class="qtext">Give one word for: 'A person who has no money'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Pauper</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q13</span><span class="qtext">Give one word for: 'Study of ancient societies through fossils'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Paleontology</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q14</span><span class="qtext">Give one word for: 'A list of books'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Bibliography</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q15</span><span class="qtext">Give one word for: 'Fear of enclosed spaces'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Claustrophobia</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q16</span><span class="qtext">Give one word for: 'Fear of heights'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Acrophobia</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q17</span><span class="qtext">Give one word for: 'One who works for free'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Volunteer</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q18</span><span class="qtext">Give one word for: 'Murder of a father'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Patricide</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q19</span><span class="qtext">Give one word for: 'Murder of a king'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Regicide</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q20</span><span class="qtext">Give one word for: 'A journey by sea'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Voyage</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q21</span><span class="qtext">Give one word for: 'One who is new to a field'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Novice</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q22</span><span class="qtext">Give one word for: 'Government by a small group of people'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Oligarchy</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q23</span><span class="qtext">Give one word for: 'A speech given without preparation'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Impromptu</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q24</span><span class="qtext">Give one word for: 'A person who loves mankind'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Philanthropist</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q25</span><span class="qtext">Give one word for: 'One who hates mankind'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Misanthrope</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q26</span><span class="qtext">Give one word for: 'Study of insects'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Entomology</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q27</span><span class="qtext">Give one word for: 'Study of birds' eggs'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Oology</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q28</span><span class="qtext">Give one word for: 'A shelter for birds'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Aviary</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q29</span><span class="qtext">Give one word for: 'A place where animals are kept for public viewing'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Zoo</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q30</span><span class="qtext">Give one word for: 'One who walks on foot'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Recall the single-word term used for this exact description.</li></ol>
+            <div class="final">Answer: Pedestrian</div>
+          </div>
+        </details>
+      </div>
+      <a href="#top" class="back-top">↑ Back to top</a>
+    </section>
+    <section id="topic4" class="topic-section" style="--accent:#d97706">
+      <div class="topic-header">
+        <span class="topic-index">TOPIC 4</span>
+        <h2>Idioms & Phrases</h2>
+        <span class="qcount">30 Questions</span>
+      </div>
+      <div class="shortcuts-box">
+        <div class="shortcuts-title">⚡ Quick Shortcuts</div>
+        <ul><li>Never translate an idiom literally — always learn its figurative meaning.</li><li>Use each idiom in a sentence of your own to remember it long-term.</li><li>Group idioms by theme (secrets, difficulty, emotions) to reduce confusion between similar ones.</li></ul>
+      </div>
+      <div class="qlist">
+        <details class="qcard">
+          <summary><span class="qnum">Q1</span><span class="qtext">Give the meaning of the idiom: 'A blessing in disguise'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: Something good that initially seemed bad</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q2</span><span class="qtext">Give the meaning of the idiom: 'Bite the bullet'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: To endure a painful situation with courage</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q3</span><span class="qtext">Give the meaning of the idiom: 'Break the ice'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: To initiate conversation in a social setting</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q4</span><span class="qtext">Give the meaning of the idiom: 'Call it a day'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: To stop working on something for the day</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q5</span><span class="qtext">Give the meaning of the idiom: 'Cut corners'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: To do something in the easiest or cheapest way</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q6</span><span class="qtext">Give the meaning of the idiom: 'Hit the nail on the head'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: To describe exactly what is causing a situation</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q7</span><span class="qtext">Give the meaning of the idiom: 'Once in a blue moon'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: Something that happens very rarely</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q8</span><span class="qtext">Give the meaning of the idiom: 'Piece of cake'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: Something very easy to do</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q9</span><span class="qtext">Give the meaning of the idiom: 'Spill the beans'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: To reveal a secret</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q10</span><span class="qtext">Give the meaning of the idiom: 'The ball is in your court'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: It is up to you to make the next decision</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q11</span><span class="qtext">Give the meaning of the idiom: 'Under the weather'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: Feeling ill</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q12</span><span class="qtext">Give the meaning of the idiom: 'Add fuel to the fire'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: To make a bad situation worse</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q13</span><span class="qtext">Give the meaning of the idiom: 'Back to square one'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: To start over again</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q14</span><span class="qtext">Give the meaning of the idiom: 'Beat around the bush'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: To avoid getting to the point</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q15</span><span class="qtext">Give the meaning of the idiom: 'Burn the midnight oil'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: To work late into the night</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q16</span><span class="qtext">Give the meaning of the idiom: 'By the skin of one's teeth'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: Just barely succeeding</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q17</span><span class="qtext">Give the meaning of the idiom: 'Cry over spilt milk'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: To worry about something that cannot be undone</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q18</span><span class="qtext">Give the meaning of the idiom: 'Every cloud has a silver lining'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: There is something good in every bad situation</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q19</span><span class="qtext">Give the meaning of the idiom: 'Get cold feet'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: To become nervous about doing something</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q20</span><span class="qtext">Give the meaning of the idiom: 'Hit the sack'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: To go to bed</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q21</span><span class="qtext">Give the meaning of the idiom: 'Let the cat out of the bag'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: To reveal a secret accidentally</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q22</span><span class="qtext">Give the meaning of the idiom: 'On thin ice'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: In a risky or precarious situation</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q23</span><span class="qtext">Give the meaning of the idiom: 'Speak of the devil'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: Said when a person appears just after being mentioned</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q24</span><span class="qtext">Give the meaning of the idiom: 'Take it with a grain of salt'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: To not take something too seriously</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q25</span><span class="qtext">Give the meaning of the idiom: 'The last straw'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: The final problem in a series that causes a breakdown</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q26</span><span class="qtext">Give the meaning of the idiom: 'Turn a blind eye'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: To ignore something deliberately</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q27</span><span class="qtext">Give the meaning of the idiom: 'Wear your heart on your sleeve'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: To openly show your emotions</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q28</span><span class="qtext">Give the meaning of the idiom: 'A piece of one's mind'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: To tell someone honestly what you think, usually critical</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q29</span><span class="qtext">Give the meaning of the idiom: 'Barking up the wrong tree'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: Pursuing a mistaken course of action</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q30</span><span class="qtext">Give the meaning of the idiom: 'In the nick of time'</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Idioms should be understood as a whole phrase, not word-by-word.</li></ol>
+            <div class="final">Answer: Just in time; at the last possible moment</div>
+          </div>
+        </details>
+      </div>
+      <a href="#top" class="back-top">↑ Back to top</a>
+    </section>
+    <section id="topic5" class="topic-section" style="--accent:#7c3aed">
+      <div class="topic-header">
+        <span class="topic-index">TOPIC 5</span>
+        <h2>Spotting Errors (Subject-Verb Agreement)</h2>
+        <span class="qcount">100 Questions</span>
+      </div>
+      <div class="shortcuts-box">
+        <div class="shortcuts-title">⚡ Quick Shortcuts</div>
+        <ul><li>A singular subject takes a singular verb (adds -s/-es); a plural subject takes the plain form.</li><li>Words like 'each', 'every', 'neither', 'everybody' are treated as singular.</li><li>Ignore words/phrases between the subject and verb — they don't change the agreement rule.</li></ul>
+      </div>
+      <div class="qlist">
+        <details class="qcard">
+          <summary><span class="qnum">Q1</span><span class="qtext">Find the grammatical error in the sentence: "The doctor run in the park."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The doctor' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'runs' instead of 'run'.</li></ol>
+            <div class="final">Answer: 'run' should be 'runs'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q2</span><span class="qtext">Find the grammatical error in the sentence: "The teachers speaks fruits regularly."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The teachers' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'speak' instead of 'speaks'.</li></ol>
+            <div class="final">Answer: 'speaks' should be 'speak'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q3</span><span class="qtext">Find the grammatical error in the sentence: "My brothers sings in the choir."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'My brothers' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'sing' instead of 'sings'.</li></ol>
+            <div class="final">Answer: 'sings' should be 'sing'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q4</span><span class="qtext">Find the grammatical error in the sentence: "The children goes fruits regularly."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The children' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'go' instead of 'goes'.</li></ol>
+            <div class="final">Answer: 'goes' should be 'go'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q5</span><span class="qtext">Find the grammatical error in the sentence: "The players sings the newspaper daily."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The players' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'sing' instead of 'sings'.</li></ol>
+            <div class="final">Answer: 'sings' should be 'sing'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q6</span><span class="qtext">Find the grammatical error in the sentence: "Both of them works a letter every week."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Both of them' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'work' instead of 'works'.</li></ol>
+            <div class="final">Answer: 'works' should be 'work'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q7</span><span class="qtext">Find the grammatical error in the sentence: "We speaks in the choir."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'We' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'speak' instead of 'speaks'.</li></ol>
+            <div class="final">Answer: 'speaks' should be 'speak'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q8</span><span class="qtext">Find the grammatical error in the sentence: "My brother run in the park."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'My brother' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'runs' instead of 'run'.</li></ol>
+            <div class="final">Answer: 'run' should be 'runs'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q9</span><span class="qtext">Find the grammatical error in the sentence: "The teachers runs in the choir."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The teachers' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'run' instead of 'runs'.</li></ol>
+            <div class="final">Answer: 'runs' should be 'run'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q10</span><span class="qtext">Find the grammatical error in the sentence: "Everybody sing a letter every week."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Everybody' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'sings' instead of 'sing'.</li></ol>
+            <div class="final">Answer: 'sing' should be 'sings'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q11</span><span class="qtext">Find the grammatical error in the sentence: "The players works a letter every week."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The players' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'work' instead of 'works'.</li></ol>
+            <div class="final">Answer: 'works' should be 'work'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q12</span><span class="qtext">Find the grammatical error in the sentence: "The doctors eats a letter every week."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The doctors' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'eat' instead of 'eats'.</li></ol>
+            <div class="final">Answer: 'eats' should be 'eat'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q13</span><span class="qtext">Find the grammatical error in the sentence: "The children eats in the choir."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The children' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'eat' instead of 'eats'.</li></ol>
+            <div class="final">Answer: 'eats' should be 'eat'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q14</span><span class="qtext">Find the grammatical error in the sentence: "Both of them sings to school every day."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Both of them' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'sing' instead of 'sings'.</li></ol>
+            <div class="final">Answer: 'sings' should be 'sing'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q15</span><span class="qtext">Find the grammatical error in the sentence: "Everybody teach in the choir."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Everybody' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'teaches' instead of 'teach'.</li></ol>
+            <div class="final">Answer: 'teach' should be 'teaches'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q16</span><span class="qtext">Find the grammatical error in the sentence: "The players teaches fruits regularly."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The players' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'teach' instead of 'teaches'.</li></ol>
+            <div class="final">Answer: 'teaches' should be 'teach'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q17</span><span class="qtext">Find the grammatical error in the sentence: "The teacher read to school every day."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The teacher' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'reads' instead of 'read'.</li></ol>
+            <div class="final">Answer: 'read' should be 'reads'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q18</span><span class="qtext">Find the grammatical error in the sentence: "They eats to school every day."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'They' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'eat' instead of 'eats'.</li></ol>
+            <div class="final">Answer: 'eats' should be 'eat'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q19</span><span class="qtext">Find the grammatical error in the sentence: "The manager write English fluently."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The manager' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'writes' instead of 'write'.</li></ol>
+            <div class="final">Answer: 'write' should be 'writes'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q20</span><span class="qtext">Find the grammatical error in the sentence: "He eat a letter every week."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'He' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'eats' instead of 'eat'.</li></ol>
+            <div class="final">Answer: 'eat' should be 'eats'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q21</span><span class="qtext">Find the grammatical error in the sentence: "The children sings a letter every week."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The children' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'sing' instead of 'sings'.</li></ol>
+            <div class="final">Answer: 'sings' should be 'sing'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q22</span><span class="qtext">Find the grammatical error in the sentence: "The managers works the newspaper daily."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The managers' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'work' instead of 'works'.</li></ol>
+            <div class="final">Answer: 'works' should be 'work'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q23</span><span class="qtext">Find the grammatical error in the sentence: "They eats football on Sundays."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'They' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'eat' instead of 'eats'.</li></ol>
+            <div class="final">Answer: 'eats' should be 'eat'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q24</span><span class="qtext">Find the grammatical error in the sentence: "They runs a letter every week."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'They' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'run' instead of 'runs'.</li></ol>
+            <div class="final">Answer: 'runs' should be 'run'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q25</span><span class="qtext">Find the grammatical error in the sentence: "She read fruits regularly."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'She' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'reads' instead of 'read'.</li></ol>
+            <div class="final">Answer: 'read' should be 'reads'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q26</span><span class="qtext">Find the grammatical error in the sentence: "My brothers runs English fluently."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'My brothers' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'run' instead of 'runs'.</li></ol>
+            <div class="final">Answer: 'runs' should be 'run'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q27</span><span class="qtext">Find the grammatical error in the sentence: "The teachers plays football on Sundays."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The teachers' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'play' instead of 'plays'.</li></ol>
+            <div class="final">Answer: 'plays' should be 'play'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q28</span><span class="qtext">Find the grammatical error in the sentence: "They goes in the park."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'They' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'go' instead of 'goes'.</li></ol>
+            <div class="final">Answer: 'goes' should be 'go'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q29</span><span class="qtext">Find the grammatical error in the sentence: "Everybody teach the newspaper daily."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Everybody' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'teaches' instead of 'teach'.</li></ol>
+            <div class="final">Answer: 'teach' should be 'teaches'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q30</span><span class="qtext">Find the grammatical error in the sentence: "Neither of them speak mathematics well."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Neither of them' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'speaks' instead of 'speak'.</li></ol>
+            <div class="final">Answer: 'speak' should be 'speaks'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q31</span><span class="qtext">Find the grammatical error in the sentence: "The managers teaches the newspaper daily."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The managers' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'teach' instead of 'teaches'.</li></ol>
+            <div class="final">Answer: 'teaches' should be 'teach'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q32</span><span class="qtext">Find the grammatical error in the sentence: "Neither of them speak English fluently."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Neither of them' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'speaks' instead of 'speak'.</li></ol>
+            <div class="final">Answer: 'speak' should be 'speaks'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q33</span><span class="qtext">Find the grammatical error in the sentence: "My brother go mathematics well."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'My brother' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'goes' instead of 'go'.</li></ol>
+            <div class="final">Answer: 'go' should be 'goes'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q34</span><span class="qtext">Find the grammatical error in the sentence: "She go to school every day."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'She' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'goes' instead of 'go'.</li></ol>
+            <div class="final">Answer: 'go' should be 'goes'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q35</span><span class="qtext">Find the grammatical error in the sentence: "They writes a letter every week."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'They' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'write' instead of 'writes'.</li></ol>
+            <div class="final">Answer: 'writes' should be 'write'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q36</span><span class="qtext">Find the grammatical error in the sentence: "The teachers reads football on Sundays."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The teachers' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'read' instead of 'reads'.</li></ol>
+            <div class="final">Answer: 'reads' should be 'read'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q37</span><span class="qtext">Find the grammatical error in the sentence: "Several students speaks fruits regularly."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Several students' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'speak' instead of 'speaks'.</li></ol>
+            <div class="final">Answer: 'speaks' should be 'speak'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q38</span><span class="qtext">Find the grammatical error in the sentence: "Neither of them read in the park."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Neither of them' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'reads' instead of 'read'.</li></ol>
+            <div class="final">Answer: 'read' should be 'reads'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q39</span><span class="qtext">Find the grammatical error in the sentence: "Ravi speak a letter every week."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Ravi' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'speaks' instead of 'speak'.</li></ol>
+            <div class="final">Answer: 'speak' should be 'speaks'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q40</span><span class="qtext">Find the grammatical error in the sentence: "The doctor run English fluently."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The doctor' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'runs' instead of 'run'.</li></ol>
+            <div class="final">Answer: 'run' should be 'runs'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q41</span><span class="qtext">Find the grammatical error in the sentence: "Each student sing the newspaper daily."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Each student' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'sings' instead of 'sing'.</li></ol>
+            <div class="final">Answer: 'sing' should be 'sings'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q42</span><span class="qtext">Find the grammatical error in the sentence: "Ravi read in the choir."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Ravi' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'reads' instead of 'read'.</li></ol>
+            <div class="final">Answer: 'read' should be 'reads'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q43</span><span class="qtext">Find the grammatical error in the sentence: "She speak a letter every week."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'She' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'speaks' instead of 'speak'.</li></ol>
+            <div class="final">Answer: 'speak' should be 'speaks'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q44</span><span class="qtext">Find the grammatical error in the sentence: "My brothers works to school every day."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'My brothers' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'work' instead of 'works'.</li></ol>
+            <div class="final">Answer: 'works' should be 'work'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q45</span><span class="qtext">Find the grammatical error in the sentence: "The doctors teaches in the choir."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The doctors' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'teach' instead of 'teaches'.</li></ol>
+            <div class="final">Answer: 'teaches' should be 'teach'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q46</span><span class="qtext">Find the grammatical error in the sentence: "We goes mathematics well."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'We' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'go' instead of 'goes'.</li></ol>
+            <div class="final">Answer: 'goes' should be 'go'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q47</span><span class="qtext">Find the grammatical error in the sentence: "My brothers speaks football on Sundays."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'My brothers' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'speak' instead of 'speaks'.</li></ol>
+            <div class="final">Answer: 'speaks' should be 'speak'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q48</span><span class="qtext">Find the grammatical error in the sentence: "He sing mathematics well."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'He' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'sings' instead of 'sing'.</li></ol>
+            <div class="final">Answer: 'sing' should be 'sings'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q49</span><span class="qtext">Find the grammatical error in the sentence: "She speak a letter every week."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'She' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'speaks' instead of 'speak'.</li></ol>
+            <div class="final">Answer: 'speak' should be 'speaks'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q50</span><span class="qtext">Find the grammatical error in the sentence: "Each student teach to school every day."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Each student' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'teaches' instead of 'teach'.</li></ol>
+            <div class="final">Answer: 'teach' should be 'teaches'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q51</span><span class="qtext">Find the grammatical error in the sentence: "The managers plays fruits regularly."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The managers' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'play' instead of 'plays'.</li></ol>
+            <div class="final">Answer: 'plays' should be 'play'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q52</span><span class="qtext">Find the grammatical error in the sentence: "Neither of them write the newspaper daily."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Neither of them' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'writes' instead of 'write'.</li></ol>
+            <div class="final">Answer: 'write' should be 'writes'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q53</span><span class="qtext">Find the grammatical error in the sentence: "The teachers goes the newspaper daily."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The teachers' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'go' instead of 'goes'.</li></ol>
+            <div class="final">Answer: 'goes' should be 'go'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q54</span><span class="qtext">Find the grammatical error in the sentence: "They speaks mathematics well."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'They' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'speak' instead of 'speaks'.</li></ol>
+            <div class="final">Answer: 'speaks' should be 'speak'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q55</span><span class="qtext">Find the grammatical error in the sentence: "The teacher sing a letter every week."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The teacher' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'sings' instead of 'sing'.</li></ol>
+            <div class="final">Answer: 'sing' should be 'sings'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q56</span><span class="qtext">Find the grammatical error in the sentence: "They sings the newspaper daily."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'They' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'sing' instead of 'sings'.</li></ol>
+            <div class="final">Answer: 'sings' should be 'sing'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q57</span><span class="qtext">Find the grammatical error in the sentence: "My brothers eats in the park."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'My brothers' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'eat' instead of 'eats'.</li></ol>
+            <div class="final">Answer: 'eats' should be 'eat'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q58</span><span class="qtext">Find the grammatical error in the sentence: "The doctor eat in the park."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The doctor' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'eats' instead of 'eat'.</li></ol>
+            <div class="final">Answer: 'eat' should be 'eats'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q59</span><span class="qtext">Find the grammatical error in the sentence: "The managers teaches the newspaper daily."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The managers' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'teach' instead of 'teaches'.</li></ol>
+            <div class="final">Answer: 'teaches' should be 'teach'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q60</span><span class="qtext">Find the grammatical error in the sentence: "Neither of them run the newspaper daily."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Neither of them' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'runs' instead of 'run'.</li></ol>
+            <div class="final">Answer: 'run' should be 'runs'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q61</span><span class="qtext">Find the grammatical error in the sentence: "The players teaches English fluently."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The players' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'teach' instead of 'teaches'.</li></ol>
+            <div class="final">Answer: 'teaches' should be 'teach'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q62</span><span class="qtext">Find the grammatical error in the sentence: "The doctor read in the park."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The doctor' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'reads' instead of 'read'.</li></ol>
+            <div class="final">Answer: 'read' should be 'reads'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q63</span><span class="qtext">Find the grammatical error in the sentence: "My brother speak hard for the exam."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'My brother' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'speaks' instead of 'speak'.</li></ol>
+            <div class="final">Answer: 'speak' should be 'speaks'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q64</span><span class="qtext">Find the grammatical error in the sentence: "My brothers works football on Sundays."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'My brothers' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'work' instead of 'works'.</li></ol>
+            <div class="final">Answer: 'works' should be 'work'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q65</span><span class="qtext">Find the grammatical error in the sentence: "Neither of them eat English fluently."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Neither of them' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'eats' instead of 'eat'.</li></ol>
+            <div class="final">Answer: 'eat' should be 'eats'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q66</span><span class="qtext">Find the grammatical error in the sentence: "Each student run a letter every week."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Each student' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'runs' instead of 'run'.</li></ol>
+            <div class="final">Answer: 'run' should be 'runs'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q67</span><span class="qtext">Find the grammatical error in the sentence: "Everybody write English fluently."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Everybody' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'writes' instead of 'write'.</li></ol>
+            <div class="final">Answer: 'write' should be 'writes'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q68</span><span class="qtext">Find the grammatical error in the sentence: "The teacher go English fluently."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The teacher' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'goes' instead of 'go'.</li></ol>
+            <div class="final">Answer: 'go' should be 'goes'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q69</span><span class="qtext">Find the grammatical error in the sentence: "The manager sing in the choir."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The manager' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'sings' instead of 'sing'.</li></ol>
+            <div class="final">Answer: 'sing' should be 'sings'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q70</span><span class="qtext">Find the grammatical error in the sentence: "The manager write fruits regularly."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The manager' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'writes' instead of 'write'.</li></ol>
+            <div class="final">Answer: 'write' should be 'writes'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q71</span><span class="qtext">Find the grammatical error in the sentence: "Each student eat the newspaper daily."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Each student' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'eats' instead of 'eat'.</li></ol>
+            <div class="final">Answer: 'eat' should be 'eats'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q72</span><span class="qtext">Find the grammatical error in the sentence: "Several students reads in the choir."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Several students' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'read' instead of 'reads'.</li></ol>
+            <div class="final">Answer: 'reads' should be 'read'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q73</span><span class="qtext">Find the grammatical error in the sentence: "Everybody speak to school every day."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Everybody' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'speaks' instead of 'speak'.</li></ol>
+            <div class="final">Answer: 'speak' should be 'speaks'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q74</span><span class="qtext">Find the grammatical error in the sentence: "Ravi eat in the choir."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Ravi' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'eats' instead of 'eat'.</li></ol>
+            <div class="final">Answer: 'eat' should be 'eats'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q75</span><span class="qtext">Find the grammatical error in the sentence: "Everybody go mathematics well."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Everybody' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'goes' instead of 'go'.</li></ol>
+            <div class="final">Answer: 'go' should be 'goes'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q76</span><span class="qtext">Find the grammatical error in the sentence: "Several students works hard for the exam."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Several students' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'work' instead of 'works'.</li></ol>
+            <div class="final">Answer: 'works' should be 'work'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q77</span><span class="qtext">Find the grammatical error in the sentence: "Everybody write hard for the exam."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Everybody' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'writes' instead of 'write'.</li></ol>
+            <div class="final">Answer: 'write' should be 'writes'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q78</span><span class="qtext">Find the grammatical error in the sentence: "The teacher write fruits regularly."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The teacher' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'writes' instead of 'write'.</li></ol>
+            <div class="final">Answer: 'write' should be 'writes'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q79</span><span class="qtext">Find the grammatical error in the sentence: "My brothers goes fruits regularly."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'My brothers' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'go' instead of 'goes'.</li></ol>
+            <div class="final">Answer: 'goes' should be 'go'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q80</span><span class="qtext">Find the grammatical error in the sentence: "The doctor work a letter every week."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The doctor' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'works' instead of 'work'.</li></ol>
+            <div class="final">Answer: 'work' should be 'works'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q81</span><span class="qtext">Find the grammatical error in the sentence: "The teacher play hard for the exam."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The teacher' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'plays' instead of 'play'.</li></ol>
+            <div class="final">Answer: 'play' should be 'plays'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q82</span><span class="qtext">Find the grammatical error in the sentence: "He eat mathematics well."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'He' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'eats' instead of 'eat'.</li></ol>
+            <div class="final">Answer: 'eat' should be 'eats'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q83</span><span class="qtext">Find the grammatical error in the sentence: "We reads in the park."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'We' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'read' instead of 'reads'.</li></ol>
+            <div class="final">Answer: 'reads' should be 'read'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q84</span><span class="qtext">Find the grammatical error in the sentence: "The doctors goes fruits regularly."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The doctors' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'go' instead of 'goes'.</li></ol>
+            <div class="final">Answer: 'goes' should be 'go'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q85</span><span class="qtext">Find the grammatical error in the sentence: "The doctors reads to school every day."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The doctors' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'read' instead of 'reads'.</li></ol>
+            <div class="final">Answer: 'reads' should be 'read'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q86</span><span class="qtext">Find the grammatical error in the sentence: "They goes hard for the exam."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'They' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'go' instead of 'goes'.</li></ol>
+            <div class="final">Answer: 'goes' should be 'go'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q87</span><span class="qtext">Find the grammatical error in the sentence: "Each student speak the newspaper daily."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Each student' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'speaks' instead of 'speak'.</li></ol>
+            <div class="final">Answer: 'speak' should be 'speaks'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q88</span><span class="qtext">Find the grammatical error in the sentence: "The players sings hard for the exam."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The players' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'sing' instead of 'sings'.</li></ol>
+            <div class="final">Answer: 'sings' should be 'sing'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q89</span><span class="qtext">Find the grammatical error in the sentence: "The doctors goes mathematics well."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The doctors' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'go' instead of 'goes'.</li></ol>
+            <div class="final">Answer: 'goes' should be 'go'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q90</span><span class="qtext">Find the grammatical error in the sentence: "My brothers sings in the park."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'My brothers' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'sing' instead of 'sings'.</li></ol>
+            <div class="final">Answer: 'sings' should be 'sing'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q91</span><span class="qtext">Find the grammatical error in the sentence: "The doctor speak to school every day."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The doctor' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'speaks' instead of 'speak'.</li></ol>
+            <div class="final">Answer: 'speak' should be 'speaks'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q92</span><span class="qtext">Find the grammatical error in the sentence: "We runs hard for the exam."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'We' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'run' instead of 'runs'.</li></ol>
+            <div class="final">Answer: 'runs' should be 'run'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q93</span><span class="qtext">Find the grammatical error in the sentence: "Each student run a letter every week."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Each student' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'runs' instead of 'run'.</li></ol>
+            <div class="final">Answer: 'run' should be 'runs'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q94</span><span class="qtext">Find the grammatical error in the sentence: "Each student read the newspaper daily."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Each student' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'reads' instead of 'read'.</li></ol>
+            <div class="final">Answer: 'read' should be 'reads'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q95</span><span class="qtext">Find the grammatical error in the sentence: "She work football on Sundays."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'She' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'works' instead of 'work'.</li></ol>
+            <div class="final">Answer: 'work' should be 'works'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q96</span><span class="qtext">Find the grammatical error in the sentence: "The managers runs English fluently."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The managers' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'run' instead of 'runs'.</li></ol>
+            <div class="final">Answer: 'runs' should be 'run'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q97</span><span class="qtext">Find the grammatical error in the sentence: "Ravi work fruits regularly."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Ravi' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'works' instead of 'work'.</li></ol>
+            <div class="final">Answer: 'work' should be 'works'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q98</span><span class="qtext">Find the grammatical error in the sentence: "The doctor run to school every day."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'The doctor' is singular, so the verb must take -s/-es.</li><li>Correct verb form: 'runs' instead of 'run'.</li></ol>
+            <div class="final">Answer: 'run' should be 'runs'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q99</span><span class="qtext">Find the grammatical error in the sentence: "They sings in the park."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'They' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'sing' instead of 'sings'.</li></ol>
+            <div class="final">Answer: 'sings' should be 'sing'</div>
+          </div>
+        </details>
+        <details class="qcard">
+          <summary><span class="qnum">Q100</span><span class="qtext">Find the grammatical error in the sentence: "Several students writes in the park."</span></summary>
+          <div class="answer">
+            <ol class="steps"><li>Subject 'Several students' is plural, so the verb must not take -s/-es.</li><li>Correct verb form: 'write' instead of 'writes'.</li></ol>
+            <div class="final">Answer: 'writes' should be 'write'</div>
+          </div>
+        </details>
+      </div>
+      <a href="#top" class="back-top">↑ Back to top</a>
+    </section>
+</div>
+
+<footer>SSC CGL 2026 English Material — 240 practice questions across 5 topics. Part of the Tier 1 Complete Edition.</footer>
+</body>
+</html>
